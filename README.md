@@ -4,7 +4,7 @@
 Итоговый результат — аналитический дашборд в Yandex DataLens, показывающий потенциал курортов, их сильные и слабые стороны, а также качество исходных данных.
 
 ## 🚀 Ссылки
-* **Дашборд в DataLens:** ([https://datalens.ru/dld2owwpi24ww-reyting-gornolyzhnyh-kurortov-rossii](https://datalens.ru/dld2owwpi24ww-reyting-gornolyzhnyh-kurortov-rossii?_share_link=org)
+* **Дашборд в DataLens:** (https://datalens.ru/dld2owwpi24ww-reyting-gornolyzhnyh-kurortov-rossii?_share_link=org)
 * **Техническое задание:** `docs/Travel_Designer_TZ_Resort_Ranking.docx`
 
 ## 📁 Структура проекта
