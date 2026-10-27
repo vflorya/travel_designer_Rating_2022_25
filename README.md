@@ -102,3 +102,4 @@ python src/prepare_model_data.py
 - нет пропусков в `trips_2025`
 - нет бесконечностей и деления на ноль
 - повторный запуск даёт тот же результат
+<img width="453" height="340" alt="image" src="https://github.com/user-attachments/assets/497c575f-c7e4-4f05-b20a-ab94cbf973b8" />
