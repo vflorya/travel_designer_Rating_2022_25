@@ -7,9 +7,9 @@
 ## 🚀 Ссылки
 
 - **Дашборд в Yandex DataLens:** [Рейтинг горнолыжных курортов России](https://datalens.ru/dld2owwpi24ww-reyting-gornolyzhnyh-kurortov-rossii?_share_link=org)
-- **Техническое задание:** [`docs/Travel_Designer_TZ_Resort_Ranking.docx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
-- **Контрольный прототип:** [`data/workbooks/Travel_Designer_Popularity_Prototype.xlsx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
-- **Зависимости:** `requirements.txt`
+- **Техническое задание:** [`Travel_Designer_TZ_Resort_Ranking.docx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
+- **Контрольный прототип:** [`Travel_Designer_Popularity_Prototype.xlsx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
+- **Зависимости:** [`requirements.txt`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/requirements.txt)
 
   
 ### Быстрая проверка — одна команда
