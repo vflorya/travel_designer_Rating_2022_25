@@ -1,5 +1,5 @@
 # Рейтинг горнолыжных курортов России — Travel Designer
-<img width="612" height="260" alt="image" src="https://github.com/user-attachments/assets/774f4ffa-5fff-47dc-ad8f-03fe345aa59e" />
+<img width="1000" height="150" alt="image" src="https://github.com/user-attachments/assets/774f4ffa-5fff-47dc-ad8f-03fe345aa59e" />
 
 Воспроизводимый расчёт рейтинга 32 горнолыжных курортов России на основе открытых данных. Задача — понять, какие курорты стоит первыми добавить в каталог Travel Designer, и показать для каждого места: из каких данных оно получено, какие допущения использованы и насколько мы уверены в исходных данных.
 
