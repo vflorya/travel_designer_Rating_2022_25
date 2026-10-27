@@ -17,9 +17,6 @@
 ```bash
 pip install -r requirements.txt
 python src/prepare_model_data.py
-
 Скрипт читает `data/raw/`, пересобирает `data/processed/model_data.json` и выводит топ-12. Если топ-10 совпадает с таблицей ниже (±0.2 балла) — расчёт корректен.
-
 Полный разбор по этапам — в ноутбуках `notebooks/01_audit_resorts.ipynb`, `02_scoring.ipynb`, `03_rating.ipynb`. Перед запуском верни `BASE = Path(".")` в первой ячейке (по умолчанию может стоять абсолютный путь).
-
 ## 📊 Контрольный результат — топ-10
