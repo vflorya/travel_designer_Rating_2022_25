@@ -1,5 +1,5 @@
 # Рейтинг горнолыжных курортов России — Travel Designer
-<img width="612" height="342" alt="image" src="https://github.com/user-attachments/assets/774f4ffa-5fff-47dc-ad8f-03fe345aa59e" />
+<img width="612" height="260" alt="image" src="https://github.com/user-attachments/assets/774f4ffa-5fff-47dc-ad8f-03fe345aa59e" />
 
 Воспроизводимый расчёт рейтинга 32 горнолыжных курортов России на основе открытых данных. Задача — понять, какие курорты стоит первыми добавить в каталог Travel Designer, и показать для каждого места: из каких данных оно получено, какие допущения использованы и насколько мы уверены в исходных данных.
 
@@ -102,4 +102,4 @@ python src/prepare_model_data.py
 - нет пропусков в `trips_2025`
 - нет бесконечностей и деления на ноль
 - повторный запуск даёт тот же результат
-<img width="453" height="340" alt="image" src="https://github.com/user-attachments/assets/497c575f-c7e4-4f05-b20a-ab94cbf973b8" />
+
