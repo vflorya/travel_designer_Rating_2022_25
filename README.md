@@ -32,7 +32,7 @@ Travel_Designer_Resort_Ranking/
    └── prepare_model_data.py
 
 
-  Travel_Designer_Resort_Ranking/
+Travel_Designer_Resort_Ranking/
 │
 ├── README.md                  <-- Ваша инструкция (обязательно!)
 ├── requirements.txt           <-- Список библиотек (pandas, numpy и т.д.)
