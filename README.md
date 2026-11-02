@@ -5,7 +5,7 @@
 
 **Главный результат — не цифра рейтинга сама по себе, а воспроизводимый расчёт.** Другой аналитик должен взять `data/raw/`, выполнить команды из этого README и получить тот же результат (±0.2 балла — допуск из ТЗ).
 
-## 🚀 Ссылки
+## Ссылки
 
 - **Дашборд в Yandex DataLens:** [Рейтинг горнолыжных курортов России](https://datalens.ru/dld2owwpi24ww-reyting-gornolyzhnyh-kurortov-rossii?_share_link=org)
 - **Техническое задание:** [`Travel_Designer_TZ_Resort_Ranking.docx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
@@ -13,14 +13,19 @@
 - **Зависимости:** [`requirements.txt`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/requirements.txt)
 
   
-### Быстрая проверка — одна команда
-pip install -r requirements.txt  
-python src/prepare_model_data.py  
+## Как воспроизвести расчет (для аналитика)
+
+Проект подготовлен для воспроизведения с нуля. Для запуска вам потребуется Python 3.10+ и Jupyter Notebook.
+
+**Шаг 1. Установка зависимостей**
+Откройте терминал (командную строку) в корневой папке проекта и выполните:
+```bash
+pip install -r requirements.txt
 
 Скрипт читает `data/raw/`, пересобирает `data/processed/model_data.json` и выводит топ-12. Если топ-10 совпадает с таблицей ниже (±0.2 балла) — расчёт корректен.
-Полный разбор по этапам — в ноутбуках `notebooks/01_audit_resorts.ipynb`, `02_scoring.ipynb`, `03_rating.ipynb`. Перед запуском верни `BASE = Path(".")` в первой ячейке (по умолчанию может стоять абсолютный путь).
+Полный разбор по этапам — в ноутбуках `notebooks/01_audit_resorts.ipynb`, `02_scoring.ipynb`, `03_rating.ipynb`. Перед запуском необходимо вернуть `BASE = Path(".")` в первой ячейке.
 
-## 📊 Контрольный результат — топ-10
+##  Контрольный результат — топ-10
 | Место | Курорт | Регион | Индекс | Уверенность |
 |:---:|---|---|---:|---:|
 | 1 | Газпром Поляна | Краснодарский край | 73.8 | 100.0 |
@@ -36,18 +41,18 @@ python src/prepare_model_data.py
 
 Полный список из 32 курортов — в [`data/processed/rating_result.csv`](data/processed/rating_result.csv).
 
-## 🗂 Файлы для DataLens
+##  Файлы для DataLens
 
 | Файл | Что | Экран |
 |---|---|---|
-| `rating_result.csv` | Место, курорт, регион, индекс, уверенность, категория | Рейтинг |
-| `rating_full.csv` | 13 баллов, 5 компонентов, сценарии весов | Профиль и сравнение |
+| [rating_result.csv](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/rating_result.csv)  | Место, курорт, регион, индекс, уверенность, категория | Рейтинг |
+| [`rating_full.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/rating_full.csv) | 13 баллов, 5 компонентов, сценарии весов | Профиль и сравнение |
 | `rating_quality.csv` | Флаги: цена, координаты, OSM overlap | Качество |
-| `resorts_coordinates.csv` | Широта, долгота | Карта |
+| [`resorts_coordinates.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/resorts_coordinates.csv) | Широта, долгота | Карта |
 
 Соединение по `resort_id`. Кодировка `utf-8-sig`, разделитель — запятая.
 
-## 🧮 Методика
+##  Методика
 
 13 показателей сгруппированы в 5 компонентов. Веса:
 
@@ -61,7 +66,7 @@ python src/prepare_model_data.py
 
 Нормализация: log min-max для поездок, OSM и снегопада; min-max для снежных/морозных дней; обратная шкала для аэропорта и цены. Пропуск цены → `price_score = 50`, курорт не удаляется. `confidence_score` не входит в индекс и не влияет на место.
 
-## ⚠️ Ограничения
+##  Ограничения
 
 1. Региональный турпоток относится ко всему субъекту РФ, а не к курорту — все курорты одного региона получают одинаковый балл спроса.
 2. Полнота OSM различается между регионами.
@@ -75,7 +80,7 @@ python src/prepare_model_data.py
 
 Дополнительно: 18 из 32 курортов имеют флаг `manual_review_required` (координата указывает на соседний объект), 8 — `nearby_feature_proxy`.
 
-## 📚 Источники
+##  Источники
 
 - ЕМИСС 62157 (поездки) и 62489 (ночёвки) — без ключа
 - Росстат «Туризм» — КСР, выручка, ВДС
@@ -87,7 +92,7 @@ python src/prepare_model_data.py
 
 Даты сбора — 14/09/2026 (в `data/raw/resort_open_data.json` → `collectedAt`)
 
-## 🎯 Ключевые выводы
+##  Ключевые выводы
 
 - Сильнее всего на рейтинг влияют `region_trips` (54% дисперсии), `region_growth` (11%) и `pistes` (7%).
 - Топ-4 устойчив к сценариям весов (+20% климат, +20% доступность).
