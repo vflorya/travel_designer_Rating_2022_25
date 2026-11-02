@@ -8,8 +8,8 @@
 ## Ссылки
 
 - **Дашборд в Yandex DataLens:** [Рейтинг горнолыжных курортов России](https://datalens.ru/dld2owwpi24ww-reyting-gornolyzhnyh-kurortov-rossii?_share_link=org)
-- **Техническое задание:** [`Travel_Designer_TZ_Resort_Ranking.docx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
-- **Контрольный прототип:** [`Travel_Designer_Popularity_Prototype.xlsx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_Popularity_Prototype.xlsx)
+- **Техническое задание:** [`Travel_Designer_TZ_Resort_Ranking.docx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/Travel_Designer_TZ_Resort_Ranking.docx)
+- **Контрольный прототип:** [`Travel_Designer_Popularity_Prototype.xlsx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/data/workbooks/Travel_Designer_Popularity_Prototype.xlsx)
 - **Зависимости:** [`requirements.txt`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/requirements.txt)
 
   
@@ -25,8 +25,8 @@ pip install -r requirements.txt
 **Шаг 2. Запуск пересборки данных**
 Весь пайплайн (очистка, агрегация, расчет баллов и сохранение итоговых CSV) упакован в ноутбук. 
 
-Выполните следующую команду в терминале, чтобы запустить его автоматически без открытия браузера:  
-jupyter nbconvert --to notebook --execute "notebooks/notebooks_03_rating (6).ipynb" --inplace  
+Выполните следующую команду в терминале, чтобы запустить его автоматически без открытия браузера:    
+jupyter nbconvert --to notebook --execute "notebooks/notebooks_03_rating.ipynb" --inplace    
 
 Если вы хотите запустить вручную: откройте ноутбук notebooks_03_rating (6).ipynb и выберите в меню Cell -> Run All.  
 
@@ -44,16 +44,16 @@ jupyter nbconvert --to notebook --execute "notebooks/notebooks_03_rating (6).ipy
 | 9 | Горный воздух | Сахалинская область | 52.8 | 45.5 |
 | 10 | Бобровый лог | Красноярский край | 51.1 | 45.5 |
 
-Полный список из 32 курортов — в [`data/processed/rating_result.csv`](data/processed/rating_result.csv).
+Полный список из 32 курортов — в [`data/processed/rating_result.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/notebooks/rating_result.csv).
 
 ##  Файлы для DataLens
 
 | Файл | Что | Экран |
 |---|---|---|
-| [rating_result.csv](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/rating_result.csv)  | Место, курорт, регион, индекс, уверенность, категория | Рейтинг |
-| [`rating_full.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/rating_full.csv) | 13 баллов, 5 компонентов, сценарии весов | Профиль и сравнение |
-| `rating_quality.csv` | Флаги: цена, координаты, OSM overlap | Качество |
-| [`resorts_coordinates.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/resorts_coordinates.csv) | Широта, долгота | Карта |
+| [rating_result.csv](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/notebooks/rating_result.csv)  | Место, курорт, регион, индекс, уверенность, категория | Рейтинг |
+| [`rating_full.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/notebooks/rating_full.csv) | 13 баллов, 5 компонентов, сценарии весов | Профиль и сравнение |
+| [`rating_quality.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/notebooks/rating_quality.csv)| Флаги: цена, координаты, OSM overlap | Качество |
+| [`resorts_coordinates.csv`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/notebooks/resorts_coordinates.csv) | Широта, долгота | Карта |
 
 Соединение по `resort_id`. Кодировка `utf-8-sig`, разделитель — запятая.
 
