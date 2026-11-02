@@ -27,8 +27,8 @@ pip install -r requirements.txt
 
 Выполните следующую команду в терминале, чтобы запустить его автоматически без открытия браузера:    
 jupyter nbconvert --to notebook --execute "notebooks/notebooks_03_rating.ipynb" --inplace    
-
-Если вы хотите запустить вручную: откройте ноутбук notebooks_03_rating (6).ipynb и выберите в меню Cell -> Run All.  
+  
+Если вы хотите запустить вручную: откройте ноутбук notebooks_03_rating.ipynb и выберите в меню Cell -> Run All.  
 
 ##  Контрольный результат — топ-10
 | Место | Курорт | Регион | Индекс | Уверенность |
