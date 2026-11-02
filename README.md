@@ -20,16 +20,17 @@ Travel_Designer_Resort_Ranking/  <-- Корень проекта
 │
 ├── README.md                                 <-- Инструкция по запуску
 ├── requirements.txt                          <-- Список библиотек для установки
-├── Travel_Designer_TZ_Resort_Ranking.docx    <-- Ваше Техническое задание (в корне)
+├── Travel_Designer_TZ_Resort_Ranking.docx    <-- Техническое задание
 │
-├── data/                                     <-- ТОЛЬКО ДАННЫЕ
+├── data/                                     <-- ДАННЫЕ
 │   ├── raw/                                  <-- Исходники (resorts.json, csv-файлы ЕМИСС и т.д.)
 │   └── processed/                            <-- Результаты (rating_result.csv, model_data.json)
 │
-└── notebooks/                                <-- ТОЛЬКО КОД (НОУТБУКИ)
+└── notebooks/                                <-- НОУТБУКИ
     ├── notebooks_14_01_audit_resorts.ipynb   <-- Аудит
     ├── notebooks_14_02_scoring.ipynb         <-- Проверка формул
-    └── notebooks_03_rating (6).ipynb         <-- Главный ноутбук для сборки рейтинга ```
+    └── notebooks_03_rating.ipynb         <-- Главный ноутбук для сборки рейтинга
+```
 
 ## Как воспроизвести расчет (для аналитика)
 
