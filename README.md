@@ -20,7 +20,7 @@
 **Шаг 1. Установка зависимостей**
 Откройте терминал (командную строку) в корневой папке проекта и выполните:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt ```
 
 Скрипт читает `data/raw/`, пересобирает `data/processed/model_data.json` и выводит топ-12. Если топ-10 совпадает с таблицей ниже (±0.2 балла) — расчёт корректен.
 Полный разбор по этапам — в ноутбуках `notebooks/01_audit_resorts.ipynb`, `02_scoring.ipynb`, `03_rating.ipynb`. Перед запуском необходимо вернуть `BASE = Path(".")` в первой ячейке.
