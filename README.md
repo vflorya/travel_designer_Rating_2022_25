@@ -13,44 +13,24 @@
 - **Зависимости:** [`requirements.txt`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/requirements.txt)
 
 ## Структура 
-Travel_Designer_Resort_Ranking/
-│
-├── README.md                  <-- Ваша инструкция (обязательно!)
-├── requirements.txt           <-- Список библиотек (pandas, numpy и т.д.)
-│── Travel_Designer_TZ_Resort_Ranking.docx (ваше ТЗ)
-│
-├── data/
-│   ├── raw/                   <-- Ваши скачанные файлы (resorts.json, csv и т.д.)
-│   └── processed/             <-- (Можно оставить пустой, скрипт всё создаст)
-│
-├── notebooks/                 
-│   ├── notebooks_14_01_audit_resorts.ipynb
-│   ├── notebooks_14_02_scoring.ipynb
-│   └── notebooks_03_rating.ipynb  <-- Главный ноутбук для проверки
-│
-├── src/                       
-   └── prepare_model_data.py
+## 📂 Структура проекта
 
+```text
+Travel_Designer_Resort_Ranking/  <-- Корень проекта
+│
+├── README.md                                 <-- Инструкция по запуску
+├── requirements.txt                          <-- Список библиотек для установки
+├── Travel_Designer_TZ_Resort_Ranking.docx    <-- Ваше Техническое задание (в корне)
+│
+├── data/                                     <-- ТОЛЬКО ДАННЫЕ
+│   ├── raw/                                  <-- Исходники (resorts.json, csv-файлы ЕМИСС и т.д.)
+│   └── processed/                            <-- Результаты (rating_result.csv, model_data.json)
+│
+└── notebooks/                                <-- ТОЛЬКО КОД (НОУТБУКИ)
+    ├── notebooks_14_01_audit_resorts.ipynb   <-- Аудит
+    ├── notebooks_14_02_scoring.ipynb         <-- Проверка формул
+    └── notebooks_03_rating (6).ipynb         <-- Главный ноутбук для сборки рейтинга ```
 
-Travel_Designer_Resort_Ranking/
-│
-├── README.md                  <-- Ваша инструкция (обязательно!)
-├── requirements.txt           <-- Список библиотек (pandas, numpy и т.д.)
-│
-├── data/
-│   ├── raw/                   <-- Ваши скачанные файлы (resorts.json, csv и т.д.)
-│   └── processed/             <-- (Можно оставить пустой, скрипт всё создаст)
-│
-├── notebooks/                 <-- Ваши 3 ноутбука
-│   ├── notebooks_14_01_audit_resorts.ipynb
-│   ├── notebooks_14_02_scoring.ipynb
-│   └── notebooks_03_rating (6).ipynb  <-- Главный ноутбук для проверки
-│
-├── src/                       <-- (Если сделали .py скрипт из ноутбука)
-│   └── prepare_model_data.py
-│
-└── docs/
-    └── Travel_Designer_TZ_Resort_Ranking.docx (ваше ТЗ)
 ## Как воспроизвести расчет (для аналитика)
 
 Проект подготовлен для воспроизведения с нуля. Для запуска вам потребуется Python 3.10+ и Jupyter Notebook.
