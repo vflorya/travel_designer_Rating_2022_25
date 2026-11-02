@@ -1,0 +1,33 @@
+﻿resort_id,Курорт,Регион,Качество_координат,Флаги_качества,Полнота,Уверенность,Цена_скипасса,Месяцев_с_ценой,has_price,has_exact_coords,needs_manual_review,osm_overlap
+R003,Газпром Поляна,Краснодарский край,resort_or_complex_page,OSM radii overlap,1.0,100.0,4100.0,1,True,True,False,True
+R002,Красная Поляна,Краснодарский край,resort_or_complex_page,OSM radii overlap,1.0,100.0,4483.333333333333,6,True,True,False,True
+R001,Роза Хутор,Краснодарский край,nearby_feature_proxy,coordinates are proxy; OSM radii overlap,1.0,75.0,6028.75,4,True,False,False,True
+R030,Сорочаны,Московская область,resort_or_complex_page,,1.0,75.0,,0,False,True,False,False
+R005,Архыз,Карачаево-Черкесская Республика,resort_or_complex_page,,1.0,100.0,3918.75,4,True,True,False,False
+R006,Домбай,Карачаево-Черкесская Республика,resort_or_complex_page,,1.0,75.0,,0,False,True,False,False
+R029,Игора,Ленинградская область,nearby_feature_proxy,coordinates are proxy,1.0,50.0,,0,False,False,False,False
+R004,Шерегеш,Кемеровская область,resort_or_complex_page,,1.0,75.0,,0,False,True,False,False
+R016,Горный воздух,Сахалинская область,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R019,Бобровый лог,Красноярский край,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R028,Губаха,Пермский край,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R007,Эльбрус,Кабардино-Балкарская Республика,nearby_feature_proxy,coordinates are proxy; OSM radii overlap,1.0,75.0,3465.0,6,True,False,False,True
+R018,Морозная гора,Камчатский край,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R013,Большой Вудъявр,Мурманская область,manual_review_required,check coordinates; OSM radii overlap,0.9090909090909091,70.45454545454545,2649.285714285714,7,True,False,True,True
+R008,Чегет,Кабардино-Балкарская Республика,nearby_feature_proxy,coordinates are proxy; OSM radii overlap,1.0,50.0,,0,False,False,False,True
+R023,Аджигардак,Челябинская область,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R015,КолаСпортЛэнд,Мурманская область,manual_review_required,check coordinates; OSM radii overlap,0.9090909090909091,45.45454545454545,,0,False,False,True,True
+R020,Соболиная гора,Иркутская область,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R026,Абзаково,Республика Башкортостан,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R021,Гора Белая,Свердловская область,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R027,Мраткино,Республика Башкортостан,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R024,Солнечная долина,Челябинская область,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R031,Красная Глинка,Самарская область,nearby_feature_proxy,coordinates are proxy,1.0,50.0,,0,False,False,False,False
+R014,Кукисвумчорр,Мурманская область,manual_review_required,check coordinates; OSM radii overlap,0.9090909090909091,45.45454545454545,,0,False,False,True,True
+R011,Манжерок,Республика Алтай,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R025,Завьялиха,Челябинская область,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R022,Евразия,Челябинская область,manual_review_required,check coordinates,0.9090909090909091,70.45454545454545,2641.6666666666665,3,True,False,True,False
+R012,Телецкий,Республика Алтай,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
+R032,Гладенькая,Республика Хакасия,nearby_feature_proxy,coordinates are proxy,1.0,75.0,2420.0,1,True,False,False,False
+R009,Мамисон,Республика Северная Осетия — Алания,nearby_feature_proxy,coordinates are proxy; OSM radii overlap,1.0,75.0,2313.75,4,True,False,False,True
+R010,Цей,Республика Северная Осетия — Алания,nearby_feature_proxy,coordinates are proxy; OSM radii overlap,1.0,50.0,,0,False,False,False,True
+R017,Холдоми,Хабаровский край,manual_review_required,check coordinates,0.9090909090909091,45.45454545454545,,0,False,False,True,False
