@@ -12,7 +12,7 @@
 - **Контрольный прототип:** [`Travel_Designer_Popularity_Prototype.xlsx`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/data/workbooks/Travel_Designer_Popularity_Prototype.xlsx)
 - **Зависимости:** [`requirements.txt`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/requirements.txt)
 
-## Структура 
+
 ## 📂 Структура проекта
 
 ```text
