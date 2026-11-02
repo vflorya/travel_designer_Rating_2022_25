@@ -19,18 +19,27 @@
 ```text
 Travel_Designer_Resort_Ranking/  <-- Корень проекта
 │
-├── README.md                                 <-- Инструкция по запуску
-├── requirements.txt                          <-- Список библиотек для установки
-├── Travel_Designer_TZ_Resort_Ranking.docx    <-- Техническое задание
+├── README.md                                 
+├── requirements.txt                          
+├── Travel_Designer_TZ_Resort_Ranking.docx    
 │
-├── data/                                     <-- ДАННЫЕ
-│   ├── raw/                                  <-- Исходники (resorts.json, csv-файлы ЕМИСС и т.д.)
-│   └── processed/                            <-- Результаты (rating_result.csv, model_data.json)
+├── docs/
+│   └── screenshots/                          <-- Картинки дашборда
 │
-└── notebooks/                                <-- НОУТБУКИ
-    ├── notebooks_14_01_audit_resorts.ipynb   <-- Аудит
-    ├── notebooks_14_02_scoring.ipynb         <-- Проверка формул
-    └── notebooks_03_rating.ipynb         <-- Главный ноутбук для сборки рейтинга
+├── data/                                     
+│   ├── raw/                                  <-- Исходники
+│   ├── collected/                            <-- Сюда сохраняет данные 1-й скрипт
+│   └── processed/                            <-- Сюда сохраняют данные 2-й и 3-й скрипты
+│
+├── src/                                      <-- ВАШИ PYTHON-СКРИПТЫ
+│   ├── collect_resort_open_data.py           <-- Сбор данных из API (OSM, Погода, Аэропорты)
+│   ├── fetch_rosstat_enrichment.py           <-- Догрузка данных Росстата
+│   └── prepare_model_data.py                 <-- ГЛАВНЫЙ СКРИПТ: считает баллы и рейтинг
+│
+└── notebooks/                                <-- Ноутбуки (для исследования)
+    ├── notebooks_14_01_audit_resorts.ipynb   
+    ├── notebooks_14_02_scoring.ipynb         
+    └── notebooks_03_rating (6).ipynb         
 ```
 
 ## ⚙️ Инструкция по воспроизведению расчета  
@@ -39,18 +48,17 @@ Travel_Designer_Resort_Ranking/  <-- Корень проекта
 
 **Шаг 1. Подготовка окружения**
 
-Откройте терминал (командную строку) в корневой папке проекта и установите необходимые библиотеки:
+```bash
+## ⚙️ Инструкция по воспроизведению расчета
+
+Проект имеет модульную структуру. Для полного воспроизведения пайплайна от сбора данных до финального рейтинга выполните следующие шаги.
+
+### Шаг 1. Подготовка окружения
+Откройте терминал (командную строку) в корневой папке проекта и установите зависимости:
 ```bash
 pip install -r requirements.txt
-```
-**Шаг 2. Запуск пересборки данных**  
-Весь пайплайн (очистка, агрегация, расчет баллов и сохранение итоговых CSV) упакован в ноутбук. 
-
-Выполните следующую команду в терминале, чтобы запустить его автоматически без открытия браузера:    
-```
-jupyter nbconvert --to notebook --execute "notebooks/notebooks_03_rating.ipynb" --inplace
 ``` 
-Если вы хотите запустить вручную: откройте ноутбук notebooks_03_rating.ipynb и выберите в меню Cell -> Run All.  
+  
 
 
 ##  Контрольный результат — топ-10
