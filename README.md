@@ -37,6 +37,7 @@ Travel_Designer_Resort_Ranking/  <-- Корень проекта
 Проект подготовлен так, чтобы любой другой аналитик мог получить идентичный рейтинг с нуля. 
 
 ### Шаг 1. Подготовка окружения
+
 Откройте терминал (командную строку) в корневой папке проекта и установите необходимые библиотеки:
 ```bash
 pip install -r requirements.txt
@@ -54,6 +55,7 @@ pip install -r requirements.txt
 jupyter nbconvert --to notebook --execute "notebooks/notebooks_03_rating.ipynb" --inplace    
   
 Если вы хотите запустить вручную: откройте ноутбук notebooks_03_rating.ipynb и выберите в меню Cell -> Run All.  
+```
 
 ##  Контрольный результат — топ-10
 | Место | Курорт | Регион | Индекс | Уверенность |
