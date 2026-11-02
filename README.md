@@ -30,7 +30,27 @@ Travel_Designer_Resort_Ranking/
 │
 ├── src/                       
    └── prepare_model_data.py
-  
+
+
+  Travel_Designer_Resort_Ranking/
+│
+├── README.md                  <-- Ваша инструкция (обязательно!)
+├── requirements.txt           <-- Список библиотек (pandas, numpy и т.д.)
+│
+├── data/
+│   ├── raw/                   <-- Ваши скачанные файлы (resorts.json, csv и т.д.)
+│   └── processed/             <-- (Можно оставить пустой, скрипт всё создаст)
+│
+├── notebooks/                 <-- Ваши 3 ноутбука
+│   ├── notebooks_14_01_audit_resorts.ipynb
+│   ├── notebooks_14_02_scoring.ipynb
+│   └── notebooks_03_rating (6).ipynb  <-- Главный ноутбук для проверки
+│
+├── src/                       <-- (Если сделали .py скрипт из ноутбука)
+│   └── prepare_model_data.py
+│
+└── docs/
+    └── Travel_Designer_TZ_Resort_Ranking.docx (ваше ТЗ)
 ## Как воспроизвести расчет (для аналитика)
 
 Проект подготовлен для воспроизведения с нуля. Для запуска вам потребуется Python 3.10+ и Jupyter Notebook.
