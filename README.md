@@ -131,7 +131,7 @@ python src/prepare_model_data.py
 - Wikipedia и Wikidata — проверка координат
 - Roschart — дополнительный слой Росстата
 
-Даты сбора — 14/09/2026 (в `data/raw/resort_open_data.json` → `collectedAt`)
+Даты сбора — 14/09/2026 (в [`data/raw/resort_open_data.json`](https://github.com/vflorya/travel_designer_Rating_2022_25/blob/main/data/raw/resort_open_data.json) → `collectedAt`)
 
 ##  Ключевые выводы
 
